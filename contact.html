@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Comic-Con HQ</title>
+  <link rel="stylesheet" href="comiconstyle.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Panels</a></li>
+        <li><a href="menu.html">Food Court</a></li>
+        <li><a href="location.html">Map</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Contact Us</h2>
+      <p>Have a question? Want to book a booth? Or volunteer? Send your message below:</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your first name" required>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email:"  required><br>
+
+        <label for="inquiry">I'm contacting about:</label>
+        <select name="inquiry" id="inquiry" name="inquiry" required>
+          <option value="">-- Select an option --</option>
+          <option value="booth">Reserve a booth</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="general">General Questions</option>
+        </select> <br><br>
+
+        <label for="comment">Enter comments or inquiries here:</label>
+        <textarea id="comment" name="comment" placeholder="Enter your message" rows="6" data-maxwords="200" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+  <footer>
+    <p>&copy; 2025 Nikki Lumbert HQ. All superpowers reserved.</p>
+  </footer>
+</body>
+</html>
